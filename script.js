@@ -2,10 +2,10 @@
 const list = document.getElementById("infi-list");
 
 function addListItems(count){
-	for(let i = 0; i<count; i++){
-		cont listItem = document.createElement("li");
+	for(let i = 0; i<count; i++) {
+		const listItem = document.createElement("li");
 		listItem.textContent = `Item ${list.children.length + 1}`;
-		list.appendChild{listItem};
+		list.appendChild(listItem);
 	}
 }
 
@@ -16,4 +16,7 @@ list.addEventListener("scroll", function(){
 		addListItems(2);
 	}
 })
+
+
+
 
